@@ -1,0 +1,26 @@
+{
+  "title": "Flutter从入门到精通",
+  "author": "李天成",
+  "description" : "深入浅出的介绍Flutter",
+  "plugins": [
+    "-search",
+    "-sharing",
+    "back-to-top-button",
+    "code",
+    "github",
+    "favicon-custom"
+  ],
+  "pluginsConfig": {
+    "favicon": "./favicon.ico",
+    "appleTouchIconPrecomposed152": "./favicon.ico",
+    "github": {
+      "url": "https://github.com/TianchengLee"
+    },
+    "theme-default": {
+      "showLevel": true
+    }
+  },
+  "styles": {
+    "website": "styles/website.css"
+  }
+}
