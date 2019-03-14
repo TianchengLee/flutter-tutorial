@@ -38,7 +38,7 @@ QQ：6634284
 
 二维码：
 
-![wechat](.\assets\wechat.jpg)
+![wechat](assets/wechat.jpg)
 
 ## 版权许可
 
