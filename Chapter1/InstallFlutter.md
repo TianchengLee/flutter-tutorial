@@ -207,3 +207,19 @@ Flutter SDK安装非常简单，下载后解压，将 `bin` 配置到 `PATH` 环
 所以总结就是安装Android SDK，需要借助Android Studio工具，同时需要安装JDK并配置环境变量，最后Android SDK下载完毕后也需要进行环境变量的配置
 
 注意：后期开发学习可以选择使用VSCode，也可以使用Android Studio，两个工具都是官方推荐的，考虑到大部分接触Flutter的用户都是前端工程师，所以后续一切操作都是基于VSCode进行
+
+## VSCode的配置
+
+注意：此章节默认大家已经安装并可以正常运行VSCode，如未安装，请到[VSCode官网](https://code.visualstudio.com)进行下载安装
+
+安装完Flutter后，肯定要开始程序员的第一步：Hello World！
+
+但是，打开VSCode后如何新建项目呢？
+
+需要安装一个Flutter插件
+
+![1552635397747](./assets/vscode_install_plugin.png)
+
+安装完成后，使用快捷键 `ctrl + shift + p` 输入 `flutter` 可以看到创建Flutter项目的选项即表示安装成功
+
+![1552635600626](./assets/vscode_install_plugin_completed.png)

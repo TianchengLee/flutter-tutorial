@@ -7,5 +7,5 @@
   * [推荐配置](Chapter1/SystemRequirements.md)
   * [安装Flutter环境](Chapter1/InstallFlutter.md)
 
-  * [配置VSCode环境](Chapter1/VSCode.md)
+  * [Hello Flutter](Chapter1/HelloFlutter.md)
 
