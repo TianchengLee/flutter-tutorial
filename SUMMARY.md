@@ -5,5 +5,5 @@
 * [环境部署](Chapter1/README.md)
 
   * [推荐配置](Chapter1/SystemRequirements.md)
-  * [下载软件](Chapter1/SoftwareDownloads.md)
+  * [安装Flutter环境](Chapter1/InstallFlutter.md)
 

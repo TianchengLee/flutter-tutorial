@@ -60,3 +60,5 @@
   * `which`
 
 由于Windows的受众面更广泛，后续一切操作都是基于Windows平台进行，macOS用户大同小异
+
+如果需要打包iOS平台的App，则需要使用macOS进行开发
