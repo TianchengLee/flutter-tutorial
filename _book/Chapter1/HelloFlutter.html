@@ -1,0 +1,308 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Hello Flutter · Flutter从入门到精通</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="李天成">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="InstallFlutter.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Contrast.html">
+            
+                <a href="../Contrast.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    主流跨平台框架对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    环境部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="SystemRequirements.html">
+            
+                <a href="SystemRequirements.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    推荐配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="InstallFlutter.html">
+            
+                <a href="InstallFlutter.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    安装Flutter环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="HelloFlutter.html">
+            
+                <a href="HelloFlutter.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    Hello Flutter
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Hello Flutter</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x521B;&#x5EFA;&#x7B2C;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;">&#x521B;&#x5EFA;&#x7B2C;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;</h1>
+<p>&#x73AF;&#x5883;&#x5B89;&#x88C5;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x7EC8;&#x4E8E;&#x8981;&#x5F00;&#x59CB;&#x505A;&#x7B2C;&#x4E00;&#x4E2A;Flutter&#x7684;&#x9879;&#x76EE;&#x4E86;&#xFF01;</p>
+<p>&#x5728;VSCode&#x4E2D;&#x4F7F;&#x7528;&#x5FEB;&#x6377;&#x952E; <code>ctrl + shift + p</code> &#x6253;&#x5F00;&#x547D;&#x4EE4;&#x83DC;&#x5355;&#xFF0C;&#x8F93;&#x5165;Flutter&#x641C;&#x7D22;&#x76F8;&#x5173;&#x547D;&#x4EE4;&#xFF0C;&#x9009;&#x62E9;<code>Flutter: New Project</code></p>
+<p><img src="assets/vscode_install_plugin_completed.png" alt="&#x521B;&#x5EFA;&#x9879;&#x76EE;"></p>
+<p>&#x8F93;&#x5165;&#x9879;&#x76EE;&#x540D;&#xFF0C;&#x9700;&#x6CE8;&#x610F;&#x9879;&#x76EE;&#x540D;&#x5FC5;&#x987B;&#x5168;&#x5C0F;&#x5199;&#xFF0C;&#x8FDE;&#x5B57;&#x7B26;&#x4F7F;&#x7528;&#x4E0B;&#x5212;&#x7EBF;<code>_</code></p>
+<p><img src="D:\projects\flutter-tutorial\Chapter1\assets\create_project.png" alt="1552636415703"></p>
+<p>&#x9009;&#x62E9;&#x9879;&#x76EE;&#x7684;&#x5B58;&#x653E;&#x76EE;&#x5F55;&#xFF0C;&#x5C06;&#x5176;&#x653E;&#x5165;code&#x76EE;&#x5F55;&#x4E2D;</p>
+<p><img src="D:\projects\flutter-tutorial\Chapter1\assets\create_project2.png" alt="1552636544772"></p>
+<p>&#x5EFA;&#x7ACB;&#x5B8C;&#x6210;&#x540E;&#x4F1A;&#x81EA;&#x52A8;&#x6253;&#x5F00;&#x8BE5;&#x9879;&#x76EE;&#xFF0C;&#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;&#x7ED3;&#x6784;</p>
+<p><img src="D:\projects\flutter-tutorial\Chapter1\assets\create_project3.png" alt="1552637131888"></p>
+<p>&#x521B;&#x5EFA;&#x5B8C;&#x9879;&#x76EE;&#x540E;&#xFF0C;&#x5982;&#x4F55;&#x8FD0;&#x884C;&#x5462;&#xFF1F;</p>
+<ol>
+<li>&#x4F7F;&#x7528;&#x6570;&#x636E;&#x7EBF;&#x8FDE;&#x63A5;&#x4E00;&#x4E2A;Android&#x624B;&#x673A;&#xFF08;&#x5F00;&#x542F;adb&#x8C03;&#x8BD5;&#x6A21;&#x5F0F;&#xFF0C;&#x771F;&#x673A;&#x8C03;&#x8BD5;&#xFF0C;&#x5F00;&#x53D1;&#x4E2D;&#x5E38;&#x7528;&#xFF09;</li>
+<li>&#x4F7F;&#x7528;Android Virtual Device&#xFF08;Android&#x865A;&#x62DF;&#x8BBE;&#x5907;&#xFF0C;&#x53C8;&#x540D;Android&#x865A;&#x62DF;&#x673A;&#x3001;Android&#x6A21;&#x62DF;&#x5668;&#x7B49;&#xFF0C;&#x7B80;&#x79F0;AVD&#xFF09;</li>
+</ol>
+<p>&#x4E3A;&#x4E86;&#x5B66;&#x4E60;&#x548C;&#x622A;&#x56FE;&#x65B9;&#x4FBF;&#xFF0C;&#x6559;&#x7A0B;&#x4E2D;&#x90FD;&#x4F1A;&#x4F7F;&#x7528;AVD</p>
+<p>&#x521B;&#x5EFA;AVD&#xFF0C;&#x53C8;&#x9700;&#x8981;&#x501F;&#x52A9;Android Studio&#x7684;&#x5E2E;&#x52A9;&#x5566;</p>
+<p>&#x6253;&#x5F00;<code>Configure</code> ==&gt; <code>AVD Manager</code></p>
+<p><img src="D:\projects\flutter-tutorial\Chapter1\assets\avd_manager.png" alt="1552637205533"></p>
+<p>&#x9009;&#x62E9;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x865A;&#x62DF;&#x8BBE;&#x5907;</p>
+<p><img src="D:\projects\flutter-tutorial\Chapter1\assets\avd_manager2.png" alt="1552637237326"></p>
+<p>&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x81EA;&#x5DF1;&#x559C;&#x6B22;&#x7684;&#x5C3A;&#x5BF8;&#xFF08;&#x5EFA;&#x8BAE;&#x522B;&#x592A;&#x5927;&#x4E86;&#xFF0C;&#x5C0F;&#x5FC3;&#x6491;&#x7834;&#x5C4F;&#x5E55;&#x54E6;&#xFF09;</p>
+<p><img src="D:\projects\flutter-tutorial\Chapter1\assets\avd_manager3.png" alt="1552637292052"></p>
+<p>&#x9009;&#x62E9;&#x7CFB;&#x7EDF;&#x955C;&#x50CF;&#xFF08;&#x4F7F;&#x7528;&#x54EA;&#x4E2A;&#x7248;&#x672C;&#x7684;Android&#x7CFB;&#x7EDF;&#xFF09;</p>
+<p>&#x7531;&#x4E8E;&#x5F00;&#x59CB;&#x5B89;&#x88C5;Android SDK&#x65F6;&#x5E76;&#x672A;&#x4E0B;&#x8F7D;&#x7CFB;&#x7EDF;&#x955C;&#x50CF;&#xFF0C;&#x6240;&#x4EE5;&#x6B64;&#x65F6;&#x9700;&#x8981;&#x5148;&#x4E0B;&#x8F7D;&#x540E;&#x521B;&#x5EFA;</p>
+<p>&#x6B64;&#x5904;&#x9009;&#x62E9;&#x6700;&#x65B0;&#x7684;&#x6B63;&#x5F0F;&#x7248;&#x7CFB;&#x7EDF;&#xFF0C;Android 9.0 Pie&#xFF0C;&#x70B9;&#x51FB; <code>Download</code> &#x5F00;&#x59CB;&#x4E0B;&#x8F7D;</p>
+<p><img src="D:\projects\flutter-tutorial\Chapter1\assets\avd_manager4.png" alt="1552637329124"></p>
+<p>&#x8010;&#x5FC3;&#x7B49;&#x5F85;&#x4E0B;&#x8F7D;&#x4E2D;...</p>
+<p><img src="D:\projects\flutter-tutorial\Chapter1\assets\avd_manager5.png" alt="1552637372065"></p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="InstallFlutter.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 安装Flutter环境">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Hello Flutter","level":"1.3.3","depth":2,"previous":{"title":"安装Flutter环境","level":"1.3.2","depth":2,"path":"Chapter1/InstallFlutter.md","ref":"Chapter1/InstallFlutter.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","back-to-top-button","code","github","favicon-custom"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/TianchengLee"},"favicon-custom":{"appleTouchIconPrecomposed152":"./favicon.ico","favicon":"./favicon.ico"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"./favicon.ico","back-to-top-button":{},"appleTouchIconPrecomposed152":"./favicon.ico","theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"李天成","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Flutter从入门到精通","gitbook":"*","description":"深入浅出的介绍Flutter"},"file":{"path":"Chapter1/HelloFlutter.md","mtime":"2019-03-15T08:25:29.978Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-15T08:33:40.435Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
