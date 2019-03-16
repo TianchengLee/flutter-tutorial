@@ -53,14 +53,22 @@
 
 下载完毕后点击 `finish` 
 
-![1552639337644](D:\projects\flutter-tutorial\Chapter1\assets\avd_manager6.png)
+![1552639337644](./assets/avd_manager6.png)
 
 下载完毕后就可以点击下一步了
 
-![1552639407042](D:\projects\flutter-tutorial\Chapter1\assets\avd_manager7.png)
+![1552639407042](./assets/avd_manager7.png)
 
-![1552639455145](D:\projects\flutter-tutorial\Chapter1\assets\avd_manager8.png)
+进行相关配置，点击finish完成（默认配置即可）
 
-![1552639486575](D:\projects\flutter-tutorial\Chapter1\assets\avd_manager9.png)
+![1552639455145](./assets/avd_manager8.png)
 
-![1552639617227](D:\projects\flutter-tutorial\Chapter1\assets\starting_debug.png)
+创建完成后点击播放按钮启动AVD
+
+![1552639486575](./assets/avd_manager9.png)
+
+开启后就会有一个AVD启动啦
+
+在代码中使用启动调试，即可进行打包，随后会运行在AVD中
+
+![1552639617227](./assets/starting_debug.png)
